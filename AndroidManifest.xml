@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pinpin"
+    android:versionCode="1"
+    android:versionName="1.05" >
+ <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    
+	 <uses-permission android:name="android.permission.GET_ACCOUNTS" />  
+	<uses-permission android:name="android.permission.USE_CREDENTIALS" />  
+	<uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />  
+	<uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />  
+	<uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />  
+	<uses-permission android:name="android.permission.BROADCAST_STICKY" />  
+	<uses-permission android:name="android.permission.WRITE_SETTINGS" />  
+	    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+ <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission android:name="com.easemob.chatuidemo.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="com.easemob.chatuidemo.permission.C2D_MESSAGE" />
+    <uses-sdk
+        android:minSdkVersion="12"
+        android:targetSdkVersion="23" />
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" 
+        android:name="com.pinpin.app.PinApplication"
+        >
+        
+        <activity
+            android:name="com.pinpin.ui.SplashActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name="com.pinpin.guide.Guide"
+            android:label="@string/app_name" >
+        </activity>
+          <activity
+            android:name=".ui.LoginActivity"
+            android:launchMode="singleTop"
+            android:label="@string/app_name"
+          
+              >
+        </activity>
+          <activity
+            android:name=".ui.RegisterActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ui.MainActivity"
+            android:launchMode="singleTop"
+            android:label="@string/app_name" 
+            >
+        </activity>
+        <activity
+            android:name=".ui.ChatActivity"
+            android:launchMode="singleTop"
+            android:label="@string/app_name" >
+        </activity> 
+        
+        <activity
+            android:name=".ui.ShowBigImage"
+            android:launchMode="singleTop"
+            android:label="@string/app_name" >
+        </activity> 
+        <activity
+            android:name=".ui.SettingActivity"
+            android:label="@string/app_name" >
+        </activity> 
+         <activity
+            android:name=".ui.SettingInitActivity"
+            android:label="@string/app_name" >
+        </activity> 
+        
+        <activity
+            android:name=".ui.AccountActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ui.MaskCoActivity"
+            android:label="@string/app_name" >
+        </activity> 
+        <activity
+            android:name=".ui.AddCoActivity"
+            android:label="@string/app_name" >
+        </activity> 
+        <activity
+            android:name=".ui.ChangePhoneActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ui.ChangePasswordActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ui.PersonalActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+         <activity
+            android:name=".ui.PersonalInitActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ui.PhoneVerificationActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ui.ChangeMessageActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ui.TradeActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        
+         <activity
+            android:name=".ui.AccountInitActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ui.ServiceYearActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ui.OtherActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ui.ReportActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ui.ReportDetailActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ui.SearchSettingActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ui.ResetPasswordActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ui.AboutActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ui.SuggestionActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ui.TagActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+              <!-- 开机自启动服务 -->
+        <receiver android:name="com.easemob.chat.StartServiceReceiver" >
+            <intent-filter android:priority="1000" >
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </receiver>
+       
+        <meta-data android:name="EASEMOB_APPKEY"  android:value="youfan#pinpin" />
+    	<!-- 声明sdk所需的service SDK核心功能-->
+    	<service android:name="com.easemob.chat.EMChatService" />
+        	 <receiver android:name="com.easemob.chat.EMMonitorReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+    	<activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.NoTitleBar"
+             android:windowSoftInputMode="stateHidden|adjustPan"    />
+    </application>
+
+</manifest>

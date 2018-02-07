@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgrund"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#dfdfdf"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp" >
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/personal_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_block"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        >
+
+<!--         <ImageView
+			android:id="@+id/person_image" 
+			android:layout_centerVertical="true"
+        	android:layout_width="60dp"
+        	android:layout_height="60dp"
+        	android:src="@drawable/laoliu"/> -->
+         <com.pinpin.view.CircleImageView
+        android:id="@+id/person_image"
+        android:layout_width="55dp"
+         android:scaleType="centerCrop"
+        android:layout_height="55dp"
+        android:layout_centerVertical="true"
+      
+        android:src="@drawable/laoliu"
+       />
+        	
+        <ImageView
+            android:id="@+id/jiantou_image"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="0dp"
+            android:src="@drawable/dianjijiantou" />
+
+        <TextView
+            android:id="@+id/nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@+id/person_image"
+            android:text="个人信息"
+            android:textStyle="bold"
+
+            android:textSize="15sp"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp" >
+        <TextView
+            android:id="@+id/split_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#dfdfdf"
+            android:visibility="visible" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/setting_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_block"
+        android:clickable="true"
+		android:focusable="true"
+		android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <ImageView
+			android:id="@+id/setting_image" 
+        	android:layout_width="20dp"
+        	android:layout_height="20dp"
+        	android:layout_marginLeft="0dp"
+        	android:layout_centerVertical="true"
+        	android:src="@drawable/shezhi"/>
+        
+        <TextView
+            android:id="@+id/title_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical ="true"
+            android:layout_toRightOf = "@+id/setting_image"
+            android:layout_margin="10dp"
+            android:text="设置"
+            android:textSize="15sp"
+            android:visibility="visible" />
+        <ImageView 
+        	 
+        	android:layout_width="15dp"
+        	android:layout_height="15dp"
+        	android:layout_margin="0dp"
+        	android:layout_centerVertical="true"
+        	android:layout_alignParentRight="true"
+        	android:src="@drawable/dianjijiantou"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp" >
+        <TextView
+            
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#dfdfdf"
+            android:visibility="visible" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/account_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_block"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+        
+        <ImageView
+			android:id="@+id/zhanghu_image" 
+        	android:layout_width="20dp"
+        	android:layout_height="20dp"
+        	android:layout_marginLeft="0dp"
+        	android:layout_centerVertical="true"
+        	android:src="@drawable/zhanghu"/>
+        
+        <TextView
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_centerVertical ="true"
+            android:layout_toRightOf = "@+id/zhanghu_image"
+            android:text="账户"
+            android:textSize="15sp"
+            android:visibility="visible" />
+        <ImageView 
+        	 
+        	android:layout_width="15dp"
+        	android:layout_height="15dp"
+        	android:layout_margin="0dp"
+        	android:layout_centerVertical="true"
+        	android:layout_alignParentRight="true"
+        	android:src="@drawable/dianjijiantou"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp" >
+        <TextView
+            
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#dfdfdf"
+            android:visibility="visible" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/suggestion_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_block"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+        
+        <ImageView
+			android:id="@+id/yijinanfankui_image" 
+        	android:layout_width="20dp"
+        	android:layout_height="20dp"
+        	android:layout_marginLeft="0dp"
+        	android:layout_centerVertical="true"
+        	android:src="@drawable/yijinanfankui"/>
+        
+        <TextView
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_centerVertical ="true"
+            android:layout_toRightOf = "@+id/yijinanfankui_image"
+            android:text="意见反馈"
+            android:textSize="15sp"
+            android:visibility="visible" />
+        <ImageView 
+        	 
+        	android:layout_width="15dp"
+        	android:layout_height="15dp"
+        	android:layout_margin="0dp"
+        	android:layout_centerVertical="true"
+        	android:layout_alignParentRight="true"
+        	android:src="@drawable/dianjijiantou"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp" >
+        <TextView
+            
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#dfdfdf"
+            android:visibility="visible" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/about_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_block"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+        
+        <ImageView
+			android:id="@+id/guanyuwomen_image" 
+        	android:layout_width="20dp"
+        	android:layout_height="20dp"
+        	android:layout_marginLeft="0dp"
+        	android:layout_centerVertical="true"
+        	android:src="@drawable/guanyuwomen"/>
+        
+        <TextView
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_centerVertical ="true"
+            android:layout_toRightOf = "@+id/guanyuwomen_image"
+            android:text="关于我们"
+            android:textSize="15sp"
+            android:visibility="visible" />
+        <ImageView 
+        	 
+        	android:layout_width="15dp"
+        	android:layout_height="15dp"
+        	android:layout_margin="0dp"
+        	android:layout_centerVertical="true"
+        	android:layout_alignParentRight="true"
+        	android:src="@drawable/dianjijiantou"/>
+    </RelativeLayout>
+</LinearLayout>

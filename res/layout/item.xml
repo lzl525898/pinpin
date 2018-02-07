@@ -1,0 +1,237 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:focusable="true"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp"  >
+
+    <RelativeLayout
+        android:id="@+id/sliding_card_content_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:background="@drawable/sliding_card_item_bg_new" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" 
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/user_imageview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:contentDescription="no photo"
+                    android:scaleType="centerCrop" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="3"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/sliding_card_info_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" 
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/user_info_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:singleLine="true"
+                            android:text="设计师"
+                            android:textColor="#000000"
+                            android:textSize="16sp" 
+                            />
+
+                        <TextView
+                            android:id="@+id/user_year_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000000"
+                            android:textSize="16sp" 
+                            android:text="工作经验"
+                              android:ellipsize="end"
+                            android:layout_marginLeft="10dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" 
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/user_name_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="2dp"
+                            android:singleLine="true"
+                            android:text="名字"
+                            android:textColor="#666666"
+                            android:textSize="14sp" 
+                            />
+
+                        <TextView
+                            android:id="@+id/user_age_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                             android:layout_marginTop="2dp"
+                            android:singleLine="true"
+                            android:text="年纪"
+                            android:textColor="#666666"
+                            android:textSize="14sp" 
+                            android:layout_marginLeft="10dp"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:gravity="center_horizontal" >
+
+                        <TextView
+                            android:id="@+id/user_position_textview"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="2dp"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="期望薪资:无"
+                            android:textColor="#666666"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:text="标签" 
+                    android:layout_weight="2"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/pinpin_tag_1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/icon_huang"
+                        android:ellipsize="middle"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="标签"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/pinpin_tag_2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/icon_lv"
+                        android:ellipsize="middle"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="标签"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/pinpin_tag_3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/icon_lan"
+                        android:ellipsize="middle"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="标签"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--
+             <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/main_item_height"
+            />
+        -->
+        <!--
+          <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/main_item_height"
+            android:background="@drawable/sliding_card_item_image_bg" />
+        -->
+        <!--
+             <ImageView
+            android:id="@+id/user_imageview_shady"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/main_item_height"
+            android:scaleType="center" />
+        -->
+        <!--
+              <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/main_item_height"
+            android:background="@drawable/sliding_card_item_image_bg1" />
+        -->
+
+        <View
+            android:id="@+id/item_swipe_right_indicator"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_margin="18dp"
+            android:alpha="0"
+            android:background="@drawable/dislike_a" />
+
+        <View
+            android:id="@+id/item_swipe_left_indicator"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_margin="18dp"
+            android:alpha="0"
+            android:background="@drawable/like_a" 
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

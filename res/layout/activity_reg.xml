@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/trade_activity_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f7f2"
+    android:orientation="vertical" >
+<LinearLayout  
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f7f2"
+    android:orientation="vertical" >
+   
+    <LinearLayout  
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f6f7f2"
+    android:orientation="horizontal"
+    >
+    <TextView
+    android:id="@+id/area"
+    android:layout_weight="1"
+    android:layout_width="0dp"
+    android:layout_height="60dp"
+    android:text="+86"
+    android:background="#ffffff"
+    android:textSize="20sp"
+    android:gravity="center"
+     android:drawableRight="@drawable/shutiao"
+    />
+    <EditText
+    android:id="@+id/mobile"
+    android:layout_weight="3"
+    android:layout_width="0dp"
+    android:layout_height="60dp"
+    android:hint="请输入手机号"
+      android:paddingLeft="20dp"
+       android:inputType="number"
+    android:background="#ffffff"
+     android:textSize="20sp"
+    />
+  </LinearLayout>
+     
+    <EditText
+    android:id="@+id/code"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:hint="验证码"
+    android:paddingLeft="20dp"
+        android:inputType="number"
+     android:background="#ffffff"
+      android:textSize="20sp"
+       android:drawableTop="@drawable/fegexian"
+    />
+    <Button
+    android:id="@+id/btn_code"
+    android:layout_width="140dp"
+    android:layout_height="47dp"
+    android:textColor="#ffffff"
+     android:text="获取验证码"
+      android:textSize="18sp"
+     android:layout_marginTop="40dp"
+     android:layout_gravity="center"
+       android:background="@drawable/yanzhengma"
+   />
+</LinearLayout>
+
+  <Button
+    android:id="@+id/btn_reg"
+    android:layout_width="match_parent"
+    android:layout_height="47dp"
+    android:layout_alignParentBottom="true"
+    android:text="继   续"
+     android:textSize="20sp"
+    android:textColor="#ffffff"
+    android:background="@drawable/denglutiao"
+    />
+  
+</RelativeLayout>

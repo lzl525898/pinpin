@@ -1,0 +1,33 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="personalClick"
+        android:text="@string/chat_menu_personal" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clearClick"
+        android:text="@string/chat_menu_clear" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="claimClick"
+        android:text="@string/chat_menu_claim" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="deleteClick"
+        android:text="@string/chat_menu_delete" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="cancelClick"
+        android:text="@string/chat_menu_cancel" />
+
+</merge>

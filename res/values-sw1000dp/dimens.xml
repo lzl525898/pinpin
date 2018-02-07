@@ -1,0 +1,10 @@
+<resources>
+    
+ <dimen name= "p_left" >30px</dimen>
+ <dimen name= "p_right" >30px</dimen>
+ <dimen name= "main_photo_size" >660px</dimen>
+ <dimen name= "photo_size" >320px</dimen>
+ <dimen name= "divider_size" >20px</dimen>
+</resources>
+<!-- 480X800 -->
+    

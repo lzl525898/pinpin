@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+ <ScrollView
+     android:id="@+id/scrollview"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:layout_alignWithParentIfMissing="true"
+     android:background="#f6f7f2"
+     android:orientation="vertical"
+     android:scrollbars="none" >
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical" >
+
+         <RelativeLayout
+             android:id="@+id/pager_container"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="#ffffff"
+             android:paddingBottom="5dp"
+             android:paddingLeft="10dp"
+             android:paddingRight="10dp" >
+
+             <android.support.v4.view.ViewPager
+                 android:id="@+id/gallery"
+                 android:layout_width="match_parent"
+                 android:layout_height="200dp"
+                 android:background="@drawable/default_avatar" >
+             </android.support.v4.view.ViewPager>
+
+             <LinearLayout
+                 android:id="@+id/tips_box"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignBottom="@id/gallery"
+                 android:layout_centerHorizontal="true"
+                 android:layout_marginBottom="30dp"
+                 android:orientation="horizontal" >
+             </LinearLayout>
+
+             <TextView
+                 android:id="@+id/title_name"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentLeft="true"
+                 android:layout_below="@id/gallery"
+                 android:layout_marginTop="5dp"
+                 android:text="小王，   男，   32岁，  求合伙"
+                 android:textSize="12sp"
+                 android:visibility="visible" />
+
+             <TextView
+                 android:id="@+id/title_constellation"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentLeft="true"
+                 android:layout_below="@id/title_name"
+                 android:layout_marginTop="5dp"
+                 android:text="狮子座，  O型血"
+                 android:textSize="12sp"
+                 android:visibility="visible" />
+
+              <Button
+                 android:id="@+id/btn_like"
+                 android:layout_width="25dp"
+                 android:layout_height="25dp"
+                 android:layout_alignParentRight="true"
+                 android:layout_below="@id/gallery"
+                 android:layout_marginRight="20dp"
+                 android:layout_marginTop="10dp"
+                 android:background="@drawable/like_a" />
+
+             <Button
+                 android:id="@+id/btn_dislike"
+                 android:layout_width="25dp"
+                 android:layout_height="25dp"
+                 android:layout_below="@id/gallery"
+                 android:layout_marginRight="20dp"
+                 android:layout_marginTop="10dp"
+                 android:layout_toLeftOf="@id/btn_like"
+                 android:background="@drawable/dislike_a" />
+                 
+         </RelativeLayout>
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="6dp"
+             android:background="#f6f7f2"
+             android:paddingLeft="4dp"
+             android:paddingRight="4dp" >
+         </RelativeLayout>
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="#f6f7f2"
+             android:padding="10dp" >
+
+             <TextView
+                 android:id="@+id/purpose"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerVertical="true"
+                 android:layout_marginLeft="10dp"
+                 android:text="我的信息"
+                 android:textColor="#9b9b9b"
+                 android:textSize="18sp"
+                 android:visibility="visible" />
+         </RelativeLayout>
+
+         <RelativeLayout
+             android:id="@+id/trade_layout"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="#ffffff"
+             android:paddingBottom="10dp"
+             android:paddingLeft="10dp"
+             android:paddingRight="10dp"
+             android:paddingTop="5dp" >
+
+             <TextView
+                 android:id="@+id/trade_name"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerVertical="true"
+                 android:layout_marginLeft="10dp"
+                 android:text="行业"
+                 android:textSize="18sp"
+                 android:visibility="visible" />
+
+             <TextView
+                 android:id="@+id/trade_content"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentLeft="true"
+                 android:layout_centerVertical="true"
+                 android:layout_marginLeft="120dp"
+                 android:hint="行业"
+                 android:tag="trade"
+                 android:textSize="18sp"
+                 android:visibility="visible" />
+         </RelativeLayout>
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="#ffffff"
+             android:paddingLeft="4dp"
+             android:paddingRight="4dp" >
+
+             <TextView
+                 android:id="@+id/split_line"
+                 android:layout_width="match_parent"
+                 android:layout_height="1dp"
+                 android:layout_marginLeft="10dp"
+                 android:layout_marginRight="10dp"
+                 android:background="#dfdfdf"
+                 android:visibility="visible" />
+         </RelativeLayout>
+
+         <RelativeLayout
+             android:id="@+id/position_layout"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="#ffffff"
+             android:paddingBottom="10dp"
+             android:paddingLeft="10dp"
+             android:paddingRight="10dp"
+             android:paddingTop="5dp" >
+
+             <TextView
+                 android:id="@+id/position_name"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerVertical="true"
+                 android:layout_marginLeft="10dp"
+                 android:text="职位"
+                 android:textSize="18sp"
+                 android:visibility="visible" />
+
+             <TextView
+                 android:id="@+id/position_content"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentLeft="true"
+                 android:layout_centerVertical="true"
+                 android:layout_marginLeft="120dp"
+                 android:background="@null"
+                 android:hint="职位"
+                 android:tag="position"
+                 android:textSize="18sp"
+                 android:visibility="visible" />
+         </RelativeLayout>
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="#ffffff"
+             android:paddingLeft="4dp"
+             android:paddingRight="4dp" >
+
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="1dp"
+                 android:layout_marginLeft="10dp"
+                 android:layout_marginRight="10dp"
+                 android:background="#dfdfdf"
+                 android:visibility="visible" />
+         </RelativeLayout>
+
+         <RelativeLayout
+             android:id="@+id/service_year_layout"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="#ffffff"
+             android:paddingBottom="10dp"
+             android:paddingLeft="10dp"
+             android:paddingRight="10dp"
+             android:paddingTop="5dp" >
+
+             <TextView
+                 android:id="@+id/service_year_name"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerVertical="true"
+                 android:layout_marginLeft="10dp"
+                 android:text="工作年限"
+                 android:textSize="18sp"
+                 android:visibility="visible" />
+
+             <TextView
+                 android:id="@+id/service_year_content"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentLeft="true"
+                 android:layout_centerVertical="true"
+                 android:layout_marginLeft="120dp"
+                 android:hint="年限"
+                 android:tag="years"
+                 android:textSize="18sp"
+                 android:visibility="visible" />
+         </RelativeLayout>
+
+         <RelativeLayout
+             android:id="@+id/salary_separator_layout"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="#ffffff"
+             android:paddingLeft="4dp"
+             android:paddingRight="4dp" >
+
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="1dp"
+                 android:layout_marginLeft="10dp"
+                 android:layout_marginRight="10dp"
+                 android:background="#dfdfdf"
+                 android:visibility="visible" />
+         </RelativeLayout>
+
+         <RelativeLayout
+             android:id="@+id/come_from_layout"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="#ffffff"
+             android:paddingBottom="10dp"
+             android:paddingLeft="10dp"
+             android:paddingRight="10dp"
+             android:paddingTop="5dp" >
+
+             <TextView
+                 android:id="@+id/title_position"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerVertical="true"
+                 android:layout_marginLeft="10dp"
+                 android:text="期望工作地"
+                 android:textSize="18sp"
+                 android:visibility="visible" />
+
+             <TextView
+                 android:id="@+id/location_name"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentLeft="true"
+                 android:layout_centerVertical="true"
+                 android:layout_marginLeft="120dp"
+                 android:hint="期望工作地"
+                 android:tag="workPlace"
+                 android:textSize="18sp"
+                 android:visibility="visible" />
+         </RelativeLayout>
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="#ffffff"
+             android:paddingLeft="4dp"
+             android:paddingRight="4dp" >
+
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="1dp"
+                 android:layout_marginLeft="10dp"
+                 android:layout_marginRight="10dp"
+                 android:background="#dfdfdf"
+                 android:visibility="visible" />
+         </RelativeLayout>
+  <RelativeLayout
+        android:id="@+id/salary_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="10dp" >
+
+        <TextView
+            android:id="@+id/title_saray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical ="true"
+            android:layout_marginLeft="10dp"
+            android:text="薪酬"
+            android:textSize="18sp"
+            android:visibility="visible" />
+        	
+        <TextView
+            android:id="@+id/salary_name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical ="true"
+            android:layout_marginLeft="120dp"
+            android:layout_alignParentLeft="true"
+            android:hint="请选择期望薪酬"
+            android:tag="salary"
+            android:textSize="18sp"
+            android:visibility="visible" />
+        
+        
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/salary_separator_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp" >
+        <TextView
+         
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#dfdfdf"
+            android:visibility="visible" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/person_number_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="10dp" >
+
+        <TextView
+            android:id="@+id/title_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical ="true"
+            android:layout_marginLeft="10dp"
+            android:text="公司人数"
+            android:textSize="18sp"
+            android:visibility="visible" />
+        	
+        <TextView
+            android:id="@+id/person_number2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical ="true"
+            android:layout_marginLeft="120dp"
+            android:layout_alignParentLeft="true"
+            android:hint="请选择公司人数规模"
+            android:tag="personNumber"
+            android:textSize="18sp"
+            android:visibility="visible" />
+        
+        
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/person_number_separator_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp" >
+        <TextView
+            
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#dfdfdf"
+            android:visibility="visible" />
+    </RelativeLayout>
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="#f6f7f2"
+             android:padding="10dp" >
+
+             <TextView
+                 android:id="@+id/tag_title"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerVertical="true"
+                 android:layout_marginLeft="10dp"
+                 android:text="我的标签"
+                 android:textColor="#9b9b9b"
+                 android:textSize="18sp"
+                 android:visibility="visible" />
+         </RelativeLayout>
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="#ffffff"
+             android:paddingBottom="8dp"
+             android:paddingLeft="35dp"
+             android:paddingRight="35dp"
+             android:paddingTop="8dp" >
+
+             <Button
+                 android:id="@+id/btn_personal_tag1"
+                 android:layout_width="75dp"
+                 android:layout_height="36dp"
+                 android:layout_alignParentLeft="true"
+                 android:layout_centerVertical="true"
+                 android:layout_marginRight="5dp"
+                 android:background="@drawable/personal_tag"
+                 android:ellipsize="end"
+                 android:text=""
+                 android:textColor="#ffffff"
+                 android:textSize="14sp" />
+
+             <Button
+                 android:id="@+id/btn_personal_tag2"
+                 android:layout_width="75dp"
+                 android:layout_height="36dp"
+                 android:layout_centerHorizontal="true"
+                 android:background="@drawable/personal_tag"
+                 android:ellipsize="end"
+                 android:text=""
+                 android:textColor="#ffffff"
+                 android:textSize="14sp" />
+
+             <Button
+                 android:id="@+id/btn_personal_tag3"
+                 android:layout_width="75dp"
+                 android:layout_height="36dp"
+                 android:layout_alignParentRight="true"
+                 android:layout_marginLeft="5dp"
+                 android:background="@drawable/personal_tag"
+                 android:ellipsize="end"
+                 android:text=""
+                 android:textColor="#ffffff"
+                 android:textSize="14sp" />
+         </RelativeLayout>
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="#f6f7f2"
+             android:padding="10dp" >
+
+             <TextView
+                 android:id="@+id/description_title"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerVertical="true"
+                 android:layout_marginLeft="10dp"
+                 android:text="个人描述"
+                 android:textColor="#9b9b9b"
+                 android:textSize="18sp"
+                 android:visibility="visible" />
+         </RelativeLayout>
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="#ffffff"
+             android:paddingBottom="5dp"
+             android:paddingLeft="4dp"
+             android:paddingRight="4dp"
+             android:paddingTop="5dp" >
+
+             <TextView
+                 android:id="@+id/details_content"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentLeft="true"
+                 android:background="@null"
+                 android:gravity="center_vertical|left"
+                 android:hint="个人描述"
+                 android:minLines="5"
+                 android:padding="8dp"
+                 android:tag="details"
+                 android:textSize="16sp"
+                 android:visibility="visible" />
+         </RelativeLayout>
+     </LinearLayout>
+ </ScrollView>
+
+</RelativeLayout>

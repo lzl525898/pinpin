@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f7f2"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:background="#f6f7f2"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp" >
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f6f7f2"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp" >
+    <ImageView
+        android:id="@+id/loginbutton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/login_pic" />
+    <TextView
+            android:id="@+id/version_txt"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:background="#f6f7f2"
+            android:layout_below="@+id/loginbutton"
+            android:layout_marginBottom="25dp"
+            android:gravity="center"
+            android:text="优聘V1.00"
+            android:maxLength="80"
+            android:textSize="18sp"
+            android:textColor="#979797"
+            android:visibility="visible" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/update_version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_block"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp" >
+
+        <TextView
+            android:id="@+id/message_txt"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:layout_centerVertical ="true"
+            android:text="检查版本更新"
+            android:layout_marginLeft="20dp"
+            android:textSize="20sp"
+            android:visibility="visible" />
+        
+    </RelativeLayout>
+    
+
+</LinearLayout>
+
+<RelativeLayout
+        android:id="@+id/update_version0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f6f7f2"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:layout_marginBottom="40dp" >
+
+        <TextView
+            android:id="@+id/term_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="#f6f7f2"
+            android:gravity="center"
+            android:text="使用条款和隐私政策"
+            android:textColor="#5495d9"
+            android:layout_margin="5dp"
+            android:textSize="18sp"
+            android:visibility="visible" />
+        <TextView
+            android:id="@+id/copyright_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/term_txt"
+            android:background="#f6f7f2"
+            android:gravity="center"
+            android:text="黑龙江中科方德软件有限公司    版权所有"
+            android:textColor="#979797"
+            android:layout_margin="5dp"
+            android:textSize="15sp"
+            android:visibility="visible" />
+          <TextView
+            android:id="@+id/copyright_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/term_txt"
+            android:background="#f6f7f2"
+            android:gravity="center"
+            android:text=" © 2016-2020"
+            android:textColor="#979797"
+            android:layout_margin="5dp"
+            android:textSize="15sp"
+            android:visibility="visible" />
+            <TextView
+            android:id="@+id/copyright_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/term_txt"
+            android:background="#f6f7f2"
+            android:gravity="center"
+            android:text="黑龙江中科方德软件有限公司    版权所有"
+            android:textColor="#979797"
+            android:layout_margin="5dp"
+            android:textSize="15sp"
+            android:visibility="visible" />
+        
+    </RelativeLayout>
+</RelativeLayout>

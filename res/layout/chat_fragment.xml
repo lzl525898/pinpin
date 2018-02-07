@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+
+    <LinearLayout
+        android:id="@+id/btn_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:background="@drawable/daohanglan"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null" >
+
+            <Button
+                android:id="@+id/btn_match"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:text="消息"
+                android:textColor="#ffffff" />
+             <ImageView
+                android:id="@+id/badge_match"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null" >
+
+            <Button
+                android:id="@+id/btn_chat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:text="聊天"
+                android:textColor="#ffffff" />
+             <ImageView
+                android:id="@+id/badge_match2"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/init_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="78dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="28dp"
+            android:src="@drawable/pic_biaoqing" />
+
+        <TextView
+            android:id="@+id/text_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="18dp"
+            android:text="还没有人联系您，再去找找吧！"
+            android:textColor="#cbcbcb"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_find"
+            android:layout_width="100dp"
+            android:layout_height="33dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_find"
+            android:text="找一找"
+            android:textColor="#0074b1" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listview_chat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:dividerHeight="1px"
+       
+        >
+    </ListView>
+
+</LinearLayout>

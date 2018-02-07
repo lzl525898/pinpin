@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+      
+        android:background="#18aeed"
+        android:gravity="center"
+        android:text="举报该用户的理由"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/content1"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:scrollbars="vertical"
+        android:singleLine="false"
+        android:text="头像、资料作假"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+          android:background="#e8e8e8"
+        android:src="@drawable/line" />
+
+    <TextView
+        android:id="@+id/content2"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:scrollbars="vertical"
+        android:singleLine="false"
+        android:text="骚扰广告"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+          android:background="#e8e8e8"
+        android:src="@drawable/line" />
+
+    <TextView
+        android:id="@+id/content3"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:scrollbars="vertical"
+        android:singleLine="false"
+        android:text="诈骗/托"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+          android:background="#e8e8e8"
+        android:src="@drawable/line" />
+
+    <TextView
+        android:id="@+id/content4"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:scrollbars="vertical"
+        android:singleLine="false"
+        android:text="色情低俗"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+          android:background="#e8e8e8"
+        android:src="@drawable/line" />
+
+    <TextView
+        android:id="@+id/content5"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:scrollbars="vertical"
+        android:singleLine="false"
+        android:text="恶意骚扰、不文明语音"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+          android:background="#e8e8e8"
+        android:src="@drawable/line" />
+
+    <TextView
+        android:id="@+id/content6"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:scrollbars="vertical"
+        android:singleLine="false"
+        android:text="其他"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+ <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+          android:background="#e8e8e8"
+        android:src="@drawable/line" />
+<TextView
+        android:id="@+id/content7"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:scrollbars="vertical"
+        android:singleLine="false"
+        android:text="取消"
+        android:textColor="#000"
+        android:textSize="18sp" />
+</LinearLayout>

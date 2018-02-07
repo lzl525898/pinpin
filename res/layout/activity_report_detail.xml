@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f7f2"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:background="#f6f7f2"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp" >
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#f6f7f2"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp" >
+        <TextView
+            android:id="@+id/title_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical ="true"
+            android:layout_marginLeft="8dp"
+            android:text="举报该用户的理由"
+            android:textSize="14sp"
+            android:visibility="visible" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f6f7f2"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp" >
+
+        <EditText
+            android:id="@+id/message_txt"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:background="#ffffff"
+            android:gravity="left"
+            android:hint=""
+            android:maxLength="100"
+            android:textSize="20sp"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+ 
+</LinearLayout>

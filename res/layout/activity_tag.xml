@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f6f7f2"
+                android:padding="4dp" >
+
+                <TextView
+                    android:id="@+id/title_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:gravity="center"
+                    android:text="选择标签"
+                    android:textSize="14sp"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp" >
+
+                <com.pinpin.utils.MyGridView
+                    android:id="@+id/tag_gridview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:listSelector="@android:color/transparent"
+                    android:numColumns="4" >
+                </com.pinpin.utils.MyGridView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:layout_gravity="center_horizontal" >
+
+                <Button
+                    android:id="@+id/btn_chuangjiandi"
+                    android:layout_width="120dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:paddingLeft="24dp"
+                    android:background="@drawable/btn_chuangjiandi"
+                    android:text="   创建个性标签"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp"
+                     />
+
+                <ImageView
+                    android:id="@+id/tianjia"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignLeft="@+id/btn_chuangjiandi"
+                    android:layout_alignTop="@+id/btn_chuangjiandi"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="3dp"
+                    android:src="@drawable/tianjia" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView> 
+    
+        
+ 
+</LinearLayout>

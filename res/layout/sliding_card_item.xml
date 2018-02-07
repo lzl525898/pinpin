@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/card_item_height"
+    android:focusable="true" >
+
+    <RelativeLayout
+        android:id="@+id/sliding_card_content_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+       >
+
+        <ImageView
+            android:id="@+id/user_imageview"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/main_item_height"
+            android:scaleType="centerCrop"
+            android:src="@drawable/a2"
+             />
+
+      <!--   <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/main_item_height"
+            /> -->
+    <!--  <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/main_item_height"
+            android:background="@drawable/sliding_card_item_image_bg" />   -->
+        <ImageView
+            android:id="@+id/user_imageview_shady"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/main_item_height"
+            android:scaleType="center" />
+
+        <LinearLayout
+            android:id="@+id/operat_view"
+            android:layout_width="fill_parent"
+            android:layout_height="70dip"
+            android:layout_below="@id/user_imageview"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/nofeel_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:scaleType="center" />
+
+            <View
+                android:layout_width="1dip"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="15dip"
+                android:layout_marginTop="15dip" />
+
+            <ImageView
+                android:id="@+id/feel_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:scaleType="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sliding_card_info_view"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/card_info_height"
+            android:layout_alignBottom="@id/user_imageview"
+            android:padding="8dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:background="#88000000" >
+
+            <TextView
+                android:id="@+id/user_name_textview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                
+                android:layout_marginLeft="14dp"
+                android:textSize="14sp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="姓名 年龄 做什么" 
+                android:textColor="#ffffff"/>
+             <TextView
+                android:id="@+id/user_position_textview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="14dp"
+                android:textSize="16sp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="职位 工龄经验" 
+                android:textColor="#ffffff"/>
+
+            <TextView
+                android:id="@+id/user_info_textview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="14dp"
+                android:textSize="16sp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="月薪 学历" 
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+        
+         <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/main_item_height"
+            android:background="@drawable/sliding_card_item_image_bg1" />  
+        
+    </RelativeLayout>
+
+</RelativeLayout>

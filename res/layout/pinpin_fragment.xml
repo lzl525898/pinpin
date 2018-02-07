@@ -1,0 +1,257 @@
+ <RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+     <LinearLayout
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         android:orientation="vertical" >
+
+         <LinearLayout
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:orientation="vertical" 
+             android:layout_weight="1.1">
+
+             <com.pinpin.view.lorentzos.flingswipe.SwipeFlingAdapterView
+                 android:id="@+id/frame"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 app:rotation_degrees="15.5" >
+             </com.pinpin.view.lorentzos.flingswipe.SwipeFlingAdapterView>
+
+         </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:orientation="horizontal" 
+             android:layout_weight="4">
+
+             <LinearLayout
+                 android:layout_width="fill_parent"
+                 android:layout_height="fill_parent"
+                 android:orientation="vertical" 
+                 android:layout_weight="1"
+                 android:gravity="center">
+
+                 <Button
+                     android:id="@+id/left"
+                     android:layout_width="60dp"
+                     android:layout_height="60dp"
+                     android:layout_marginBottom="30dp"
+                     android:layout_marginLeft="20dp"
+                     android:background="@drawable/btn_dislike" />
+
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="fill_parent"
+                 android:layout_height="fill_parent"
+                 android:orientation="vertical"
+                 android:layout_weight="1"
+                 android:gravity="center" >
+
+                 <Button
+                     android:id="@+id/right"
+                     android:layout_width="60dp"
+                     android:layout_height="60dp"
+                     android:layout_marginBottom="30dp"
+                     android:layout_marginRight="20dp"
+                     android:background="@drawable/btn_like" />
+
+             </LinearLayout>
+
+         </LinearLayout>
+
+     </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/loading"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/ditu" 
+        android:visibility="visible"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/loading0"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:layout_weight="1.1">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" 
+                android:gravity="center"
+                 android:layout_margin="18dp" 
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/xuanzhuan"
+                    android:layout_width="280dp"
+                    android:layout_height="280dp"
+                    android:src="@drawable/xuanzhuan" />
+
+                <ImageView
+                    android:id="@+id/xuanzhuan_point"
+                    android:layout_width="280dp"
+                    android:layout_height="280dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/xuanzhuan_point" />
+
+               
+
+                <RelativeLayout
+                   android:layout_width="280dp"
+                    android:layout_height="280dp"
+                     android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                  >
+                   <com.pinpin.view.CircleImageView
+                    android:id="@+id/avatar"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ditu" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:layout_weight="3"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+
+            <Button
+                android:id="@+id/tishi"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_zikuang"
+                android:text="正在查找附近的人..."
+                android:textColor="#ffffff"
+                android:textSize="18sp" android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"/>
+
+        </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+    
+
+ 
+<!-- <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="10dp" >
+
+    <com.pinpin.view.DiscoverContainerView
+        android:id="@+id/contentview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </com.pinpin.view.DiscoverContainerView>
+
+    <Button
+        android:id="@+id/dislike"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/contentview"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/dislike_a"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/like"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/contentview"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/like_a"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/loading"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        
+        android:background="#f6f7f2"
+        android:visibility="gone" >
+
+        <RelativeLayout
+               android:id="@+id/loading0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="18dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" >
+
+            <ImageView
+                android:id="@+id/ditu"
+                android:layout_width="280dp"
+                android:layout_height="280dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ditu" />
+            <ImageView
+                android:id="@+id/xuanzhuan"
+                android:layout_width="280dp"
+                android:layout_height="280dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/xuanzhuan" />
+
+            <ImageView
+                android:id="@+id/avatar"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ditu" />
+<com.pinpin.view.CircleImageView
+        android:id="@+id/avatar"
+        android:layout_width="100dp"
+         android:scaleType="centerCrop"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+         android:src="@drawable/ditu"
+       />
+          
+        </RelativeLayout>
+          <TextView
+                android:id="@+id/tishi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/loading0"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:text="正在查找附近的人..."
+                android:textColor="#3c78d8"
+                android:textSize="18sp" />
+    </RelativeLayout>
+
+</RelativeLayout> -->

@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+      >
+<Button
+    android:id="@+id/btn_reg"
+    android:layout_width="match_parent"
+    android:layout_height="47dp"
+    android:layout_alignParentBottom="true"
+    android:text="完   成"
+     android:textSize="20sp"
+    android:textColor="#ffffff"
+    android:background="@drawable/denglutiao"
+    />
+<ScrollView  
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@id/btn_reg"
+    >
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f7f2"
+    android:orientation="vertical"
+     android:scrollbars="none" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:background="#f6f7f2"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp" >
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#f6f7f2"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp" >
+        <TextView
+            android:id="@+id/title_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical ="true"
+            android:layout_marginLeft="8dp"
+            android:text="向我显示"
+            android:textSize="14sp"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:paddingTop="10dp"
+         android:paddingBottom="10dp"
+          android:paddingLeft="25dp"
+          android:paddingRight="25dp">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+       >
+       
+        
+        <Button
+            android:id="@+id/btn_gender_male"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:maxHeight="36dp"
+             android:layout_margin="4dp"
+            android:background="@drawable/icon_nan_b"
+            />
+        
+        <Button
+            android:id="@+id/btn_gender_female"
+             android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:maxHeight="36dp"
+             android:layout_margin="4dp"
+            android:background="@drawable/icon_nv_a"
+            />
+          
+        <Button
+            android:id="@+id/btn_gender_unlimited"
+             android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:maxHeight="36dp"
+            android:text="不限"
+             android:layout_margin="4dp"
+                  android:textColor="#646464"
+            android:background="@drawable/btn_sekuai1"
+            />
+         </LinearLayout> 
+    </RelativeLayout>
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:background="#f6f7f2"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp" >
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#f6f7f2"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp" >
+        <TextView
+            android:id="@+id/title_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical ="true"
+            android:layout_marginLeft="8dp"
+            android:text="要找"
+            android:textSize="14sp"
+            android:visibility="visible" />
+    </RelativeLayout>
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+         android:paddingLeft="25dp"
+          android:paddingRight="25dp"
+      >
+       <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+       >
+        <Button
+            android:id="@+id/btn_choose1"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:maxHeight="36dp"
+            android:layout_margin="4dp"
+            android:text="找工作"
+             android:textColor="#646464"
+            android:background="@drawable/btn_sekuai1"
+           />
+        	
+        <Button
+            android:id="@+id/btn_choose2"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:maxHeight="36dp"
+            android:text="招牛人"
+             android:layout_margin="4dp"
+                  android:textColor="#646464"
+            android:background="@drawable/btn_sekuai1"
+              />
+        
+        <Button
+            android:id="@+id/btn_choose3"
+             android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:maxHeight="36dp"
+                    android:textColor="#646464"
+            android:text="求合伙"
+             android:layout_margin="4dp"
+            android:background="@drawable/btn_sekuai1"
+            />
+        
+       <!--  <Button
+            android:id="@+id/btn_choose4"
+             android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:maxHeight="36dp"
+            android:text="兼职"
+             android:layout_margin="4dp"
+                  android:textColor="#ffffff"
+            android:background="@drawable/btn_sekuai1"
+            /> -->
+         </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp" >
+       <!-- 
+        <TextView
+          
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#dfdfdf"
+            android:visibility="visible" />
+             -->
+    </RelativeLayout>
+    
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:background="#f6f7f2"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp" >
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#f6f7f2"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp" >
+        <TextView
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical ="true"
+            android:layout_marginLeft="8dp"
+            android:text="显示年龄"
+            android:textSize="14sp"
+            android:visibility="visible" />
+        <TextView
+            android:id="@+id/title_range"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical ="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:textSize="14sp"
+             android:text="18-70"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/seekbar_container" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp" >
+
+        <ImageView
+			android:id="@+id/boy_image" 
+        	android:layout_width="26dp"
+        	android:layout_height="30dp"
+        	android:layout_marginRight="2dp"
+        	android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+        	android:src="@drawable/boy"/>
+         
+        <ImageView
+			android:id="@+id/old_image" 
+        	android:layout_width="26dp"
+        	android:layout_height="35dp"
+        	android:layout_alignParentRight="true"
+        	android:layout_marginRight="10dp"
+        	android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+        	android:src="@drawable/old"/>
+        
+        <!-- <com.yahoo.mobile.client.android.util.rangeseekbar.RangeSeekBar
+            android:layout_width="290dp"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:layout_toRightOf="@id/seekbar_endpoint"
+        	android:layout_toLeftOf="@id/old_image"
+        	android:maxHeight="6dp"  
+			android:minHeight="6dp"
+			android:paddingLeft="5dp"
+			android:paddingRight="5dp"
+			android:max="100"
+			android:progress="35"
+			android:progressDrawable="@drawable/seekbar_style"
+			android:thumb="@drawable/seekbar_thumb"
+			android:id="@+id/seekBar"/> -->
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:background="#f6f7f2"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp" >
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#f6f7f2"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp" >
+        <TextView
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical ="true"
+            android:layout_marginLeft="8dp"
+            android:text="屏蔽"
+            android:textSize="14sp"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp" >
+
+        <TextView
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical ="true"
+            android:layout_margin="12dp"
+            android:text="屏蔽手机联系人"
+            android:textSize="18sp"
+            android:visibility="visible" />
+        	
+        <ToggleButton android:id="@+id/button_mask_contact"
+              android:layout_width="50dp"
+              android:layout_height="30dp"
+              android:maxHeight="30dp"
+              android:textOn=""
+              android:textOff=""
+              android:layout_centerVertical ="true"
+              android:layout_alignParentRight="true"
+              android:layout_marginRight="8dp"
+              android:background="@drawable/btn_anniu_toggle_states"/>
+    </RelativeLayout>  
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp" >
+        <TextView
+          
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#dfdfdf"
+            android:visibility="visible" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/mask_co_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_block"
+        android:clickable="true"
+		android:focusable="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp" >
+
+        <TextView
+             
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical ="true"
+            android:layout_margin="12dp"
+            android:text="屏蔽公司"
+            android:textSize="18sp"
+            android:visibility="visible" />
+        	
+        <ToggleButton android:id="@+id/button_mask_co"
+              android:layout_width="50dp"
+              android:layout_height="30dp"
+              android:maxHeight="30dp"
+              android:textOn=""
+              android:textOff=""
+              android:checked="false"
+              android:layout_centerVertical ="true"
+              android:layout_alignParentRight="true"
+              android:layout_marginRight="8dp"
+              android:background="@drawable/btn_anniu_toggle_states"/>
+    </RelativeLayout>
+</LinearLayout>
+</ScrollView>
+</RelativeLayout>
